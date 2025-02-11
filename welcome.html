@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Cheat List UI</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .card {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            cursor: pointer;
+        }
+        .card img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+        }
+        .card p {
+            font-size: 14px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            width: 80%;
+            max-width: 400px;
+        }
+        .popup h2 {
+            color: #0d47a1;
+        }
+        .popup .close {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            cursor: pointer;
+            font-size: 20px;
+            color: red;
+        }
+        .button {
+            background: #0d47a1;
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome To Joker World</h1>
+        <p>Here we have listed all the available cheats which are perfectly running without any issue!</p>
+        <div class="grid">
+            <div class="card" onclick="showPopup('visionPopup')">
+                <img src="vision.jpg" alt="Vision Android">
+                <p>VISION ANDROID</p>
+            </div>
+            <div class="card" onclick="showPopup('visionPopup')">
+                <img src="win_ios.jpg" alt="Win IOS">
+                <p>WIN IOS</p>
+            </div>
+            <div class="card" onclick="showPopup('visionPopup')">
+                <img src="lethal_x.jpg" alt="Lethal X Android">
+                <p>Lethal X Android</p>
+            </div>
+            <div class="card" onclick="showPopup('visionPopup')">
+                <img src="titan_root.jpg" alt="Titan Non Root">
+                <p>TITAN NON ROOT</p>
+            </div>
+            <div class="card" onclick="showPopup('visionPopup')">
+                <img src="titan_root.jpg" alt="Titan Root">
+                <p>TITAN ROOT</p>
+            </div>
+            <div class="card" onclick="showPopup('visionPopup')">
+                <img src="vision.jpg" alt="Fade Cheat Android">
+                <p>CHEAP & SAFE HACK</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="visionPopup" class="popup">
+        <span class="close" onclick="closePopup('visionPopup')">&times;</span>
+        <h2>VISION ANDROID</h2>
+        <p>Below are the details regarding the keys available for this cheat.</p>
+        <img src="allpop.jpg" alt="Vision Android" width="80">
+        <p><b>BGMI Cheat</b></p>
+        <div>
+            <p><b>1 Day Key</b></p>
+            <p>✅ 120m Smart BT ✅ Smart ESP ✅ Visibility Check</p>
+            <p>Price = ₹150</p>
+            <p>We wish you the best of luck in your gameplay!</p>
+        </div>
+        <div>
+            <p><b>7 Day Key</b></p>
+            <p>✅ 120m Smart BT ✅ Smart ESP ✅ Visibility Check</p>
+            <p>Price = ₹600</p>
+            <p>We wish you the best of luck in your gameplay!</p>
+        </div>
+        <div class="button" onclick="showPopup('keyPopup')">Generate Key</div>
+    </div>
+    <div id="keyPopup" class="popup" style="background-color: #333;">
+        <span class="close" onclick="closePopup('keyPopup')">&times;</span>
+        <h2>Select a key</h2>
+        <p>Do you agree to pay amount for buying a key?</p>
+        <div class="popup-toggle">
+            <span>1 Day - I agree to pay ₹150</span>
+            <input type="checkbox">
+        </div>
+        <div class="popup-toggle">
+            <span>7 Day - I agree to pay ₹600</span>
+            <input type="checkbox">
+        </div>
+        <div class="button" onclick="showPopup('chat')">Confirm</div>
+    </div>
+    <div id="chat" class="popup" style="background-color: #333;"> 
+        <span class="close" onclick="closePopup('chat')">&times;</span>
+        <a href="https://t.me/MASIHA_OWNER" class="fa fa-telegram" style="font-size:48px;color:rgb(20, 83, 230)"></a>
+        <a href="http://wa.me/919580275873" class="fa fa-whatsapp" style="font-size:48px;color:rgb(6, 220, 42)"></a>
+    </div>
+
+    <script>
+        function showPopup(id) {
+            document.getElementById(id).style.display = 'block';
+        }
+        function closePopup(id) {
+            document.getElementById(id).style.display = 'none';
+        }
+    </script>
+</body>
+</html>
